@@ -1,51 +1,66 @@
 package Sample;
 
 public class Idea {
-    int numAttributes = 0;
-    boolean teacherApproval = false;
-    boolean containsObjects = false;
-    boolean isItCool = false;
+	 
+    private int numAttributes;
+    private boolean teacherApproved;
+    private boolean containsObjects;
+    private boolean isCool;
+    private boolean isUnique;
 
-    public static set(int a, boolean t, boolean c, boolean i)
+    public Idea(int a, boolean t, boolean c, boolean is, boolean iu) {
+        numAttributes = a;
+        teacherApproved = t;
+        containsObjects = c;
+        isCool = is;
+        isUnique = iu;
+    }
+    
+    public Idea() {
+    	numAttributes = 0;
+    	teacherApproved = false;
+    	containsObjects = false;
+    	isCool = false;
+	}
+
+    public void setAttributes (int a)
     {
         numAttributes = a;
-        teacherApproval = t;
-        containsObjects = c;
-        isItCool = i;
     }
-
-    public static int setAttributes (int a)
+    public void setApproval (boolean t)
     {
-        numAttributes = a;
+        teacherApproved = t;
     }
-    public static boolean setApproval (boolean t)
-    {
-        teacherApproval = t;
-    }
-    public static boolean setObjects (boolean c)
+    public void setObjects (boolean c)
     {
         containsObjects = c;
     }
-    public static boolean setCoolness (boolean i)
+    public void setCoolness (boolean i)
     {
-        isItCool = i;
+        isCool = i;
     }
+    public void setUniqueness (boolean i) {
+    	isUnique = i;
+	}
 
-    public static int getAttributes ()
+    public int getAttributes ()
     {
         return numAttributes;
     }
-    public static boolean getApproval ()
+    public boolean getApproval ()
     {
-        return teacherApproval;
+        return teacherApproved;
     }
-    public static boolean getObjects ()
+    public boolean getObjects ()
     {
-        return containObjects;
+        return containsObjects;
     }
-    public static boolean getCoolness ()
+    public boolean getCoolness ()
     {
-        return isItCool;
+        return isCool;
     }
+    public boolean getUniqueness () {
+    	return isUnique;
+	}
 
 }
