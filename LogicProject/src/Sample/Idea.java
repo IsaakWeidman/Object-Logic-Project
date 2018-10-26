@@ -1,6 +1,8 @@
 package Sample;
 
 public class Idea {
+
+	private String name;
 	 
     private int numAttributes;
     private boolean teacherApproved;
@@ -8,7 +10,8 @@ public class Idea {
     private boolean isCool;
     private boolean isUnique;
 
-    public Idea(int a, boolean t, boolean c, boolean is, boolean iu) {
+    public Idea(String n, int a, boolean t, boolean c, boolean is, boolean iu) {
+    	name = n;
         numAttributes = a;
         teacherApproved = t;
         containsObjects = c;
@@ -16,7 +19,8 @@ public class Idea {
         isUnique = iu;
     }
     
-    public Idea() {
+    public Idea(String n) {
+    	name = n;
     	numAttributes = 0;
     	teacherApproved = false;
     	containsObjects = false;
@@ -43,6 +47,9 @@ public class Idea {
     public void setUniqueness (boolean i) {
     	isUnique = i;
 	}
+	public void setName (String n) {
+    	name = n;
+	}
 
     public int getAttributes ()
     {
@@ -60,23 +67,30 @@ public class Idea {
     public boolean getUniqueness () {
     	return isUnique;
 	}
+	public String getname() {
+    	return name;
+	}
 
-    public void isIdeaWorthy (Idea idea1) {
+    public boolean isIdeaWorthy () {
+
+        boolean isWorthy;
         if (numAttributes < 5)
-            System.out.println("It needs to have at least 5 attributes!");
+            isWorthy = false;
 
         if (!teacherApproved)
-            System.out.println("Get his/her approval before using it! Make it school appropriate!");
+            isWorthy = false;
 
         if (!containsObjects)
-            System.out.println("This is literally the point of the project.");
+            isWorthy = false;
 
         if (!isCool)
-            System.out.println("A cool idea will help the lessons stick more!");
+            isWorthy = false;
 
         if (!isUnique)
-            System.out.println("Make your own idea! Be creative!");
+            isWorthy = false;
         else
-            System.out.println("Ooh!, very creative!");
+            isWorthy = true;
+
+        return isWorthy;
     }
 }
