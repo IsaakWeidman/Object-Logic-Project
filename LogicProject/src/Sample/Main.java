@@ -25,7 +25,7 @@ public class Main {
         
         idea1.setObjects(booleanInput(userInput));
         
-        System.out.print("is your idea cool? [yes or no]\n>");
+        System.out.print("Is your idea cool? [yes or no]\n>");
         userInput = reader.nextLine();
         
         idea1.setCoolness(booleanInput(userInput));

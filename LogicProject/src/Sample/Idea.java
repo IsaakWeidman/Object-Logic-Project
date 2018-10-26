@@ -21,6 +21,7 @@ public class Idea {
     	teacherApproved = false;
     	containsObjects = false;
     	isCool = false;
+    	isUnique = false;
 	}
 
     public void setAttributes (int a)
@@ -51,10 +52,7 @@ public class Idea {
     {
         return teacherApproved;
     }
-    public boolean getObjects ()
-    {
-        return containsObjects;
-    }
+    public boolean getObjects () {   return containsObjects; }
     public boolean getCoolness ()
     {
         return isCool;
@@ -63,4 +61,22 @@ public class Idea {
     	return isUnique;
 	}
 
+    public void isIdeaWorthy (Idea idea1) {
+        if (numAttributes < 5)
+            System.out.println("It needs to have at least 5 attributes!");
+
+        if (!teacherApproved)
+            System.out.println("Get his/her approval before using it! Make it school appropriate!");
+
+        if (!containsObjects)
+            System.out.println("This is literally the point of the project.");
+
+        if (!isCool)
+            System.out.println("A cool idea will help the lessons stick more!");
+
+        if (!isUnique)
+            System.out.println("Make your own idea! Be creative!");
+        else
+            System.out.println("Ooh!, very creative!");
+    }
 }
