@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15de990f-3321-41db-a46c-eb752ae52e36" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LogicProject/Sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sample/Idea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Idea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -67,12 +64,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Ideas" value="24" />
-          <entry key="java" value="2681" />
+          <entry key="java" value="3684" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2681" />
+          <entry key="JAVA" value="3684" />
           <entry key="PLAIN_TEXT" value="24" />
         </counts>
       </usages-collector>
@@ -83,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="119" column="27" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
+            <state relative-caret-position="753">
+              <caret line="182" column="3" lean-forward="true" selection-start-line="182" selection-start-column="3" selection-end-line="182" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -192,7 +189,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540779639003" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540780403665" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -321,8 +318,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="119" column="27" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
+        <state relative-caret-position="753">
+          <caret line="182" column="3" lean-forward="true" selection-start-line="182" selection-start-column="3" selection-end-line="182" selection-end-column="3" />
         </state>
       </provider>
     </entry>

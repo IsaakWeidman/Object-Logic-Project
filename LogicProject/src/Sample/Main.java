@@ -119,9 +119,8 @@ except the method call for enterValues(). There is an if statement before the lo
 while loop in it, and when it is not commented out, the program behaves exactly the same as it did without it. We do not
 know how to fix this issue.
 
-//======================================================================================================================
+//Actual Output=========================================================================================================
 
-If
 Please enter the name of your idea:
 >Test
 How many attributes does your idea have?
@@ -149,4 +148,36 @@ Is your idea unique? [yes or no]
 Bad ideas: []
 Good ideas : [Test]
 
+//Intended Output=======================================================================================================
+
+Please enter the name of your idea:
+>Test
+How many attributes does your idea have?
+>5
+has the teacher approved of your project idea? [yes or no]
+>yes
+Does your idea contain Objects? [yes or no]
+>yes
+Is your idea cool? [yes or no]
+>yes
+Is your idea unique? [yes or no]
+>yes
+Do you have another idea? [yes or no]
+>yes
+Please enter the name of your idea:
+>Test2
+How many attributes does your idea have?
+>2
+has the teacher approved of your project idea? [yes or no]
+>no
+Does your idea contain Objects? [yes or no]
+>no
+Is your idea cool? [yes or no]
+>no
+Is your idea unique? [yes or no]
+>no
+Do you have another idea? [yes or no]
+>no
+Bad ideas: [Test2]
+Good ideas: [Test]
  */
