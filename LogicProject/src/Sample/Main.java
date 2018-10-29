@@ -15,8 +15,9 @@ public class Main {
 
     	boolean isFinished = false;
 
-    	while(isFinished = false) {
-    		System.out.println("Please enter the name of your idea:\n>");
+    	while(isFinished == false) {
+    		
+    		System.out.print("Please enter the name of your idea:\n>");
     		userInput = reader.nextLine();
 
     		ideaList.add(new Idea(userInput));
@@ -24,7 +25,7 @@ public class Main {
     		enterValues(ideaList.get(counter));
 
     		counter++;
-    		System.out.println("Do you have another idea? [yes or no]\n>");
+    		System.out.print("Do you have another idea? [yes or no]\n>");
     		userInput = reader.nextLine();
 
     		isFinished = booleanInput(userInput);

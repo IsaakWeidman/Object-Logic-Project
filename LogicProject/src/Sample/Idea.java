@@ -28,6 +28,8 @@ public class Idea {
     	isUnique = false;
 	}
 
+	
+	//Set methods
     public void setAttributes (int a)
     {
         numAttributes = a;
@@ -50,7 +52,9 @@ public class Idea {
 	public void setName (String n) {
     	name = n;
 	}
+	
 
+	//Get methods
     public int getAttributes ()
     {
         return numAttributes;
@@ -67,30 +71,35 @@ public class Idea {
     public boolean getUniqueness () {
     	return isUnique;
 	}
-	public String getname() {
+	public String getName() {
     	return name;
 	}
+	
+	
+	public String toString() {
+    	String str = getName();
+    	
+    	return str;
+	}
+	
 
     public boolean isIdeaWorthy () {
 
-        boolean isWorthy;
         if (numAttributes < 5)
-            isWorthy = false;
+            return false;
 
         if (!teacherApproved)
-            isWorthy = false;
+			return false;
 
         if (!containsObjects)
-            isWorthy = false;
+			return false;
 
         if (!isCool)
-            isWorthy = false;
+			return false;
 
         if (!isUnique)
-            isWorthy = false;
+			return false;
         else
-            isWorthy = true;
-
-        return isWorthy;
+			return true;
     }
 }
