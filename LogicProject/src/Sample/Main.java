@@ -15,8 +15,28 @@ public class Main {
 
     	boolean isFinished = false;
 
-    	while(isFinished == false) {
-    		
+//    	if(isFinished == false) {
+//    		System.out.println("If");
+//
+//			System.out.print("Please enter the name of your idea:\n>");
+//			userInput = reader.nextLine();
+//
+//			ideaList.add(new Idea(userInput));
+//
+//			enterValues(ideaList.get(counter));
+//
+//			counter++;
+//
+//			System.out.print("Do you have another idea? [yes or no]\n>");
+//			userInput = reader.nextLine();
+//
+//			isFinished = booleanInput(userInput);
+//		}
+
+    	while(!isFinished) {
+
+    		System.out.println("while");
+
     		System.out.print("Please enter the name of your idea:\n>");
     		userInput = reader.nextLine();
 
@@ -25,6 +45,7 @@ public class Main {
     		enterValues(ideaList.get(counter));
 
     		counter++;
+
     		System.out.print("Do you have another idea? [yes or no]\n>");
     		userInput = reader.nextLine();
 
@@ -90,3 +111,42 @@ public class Main {
 		return result;
 	}
 }
+
+/*
+The Program does NOT work as intended for an unknown reason. For some reason, in the while loop in the main, the first
+iteration runs perfectly as it is supposed to. After the first iteration, however, the while loop ignores all the code
+except the method call for enterValues(). There is an if statement before the loop with the exact same code as the
+while loop in it, and when it is not commented out, the program behaves exactly the same as it did without it. We do not
+know how to fix this issue.
+
+//======================================================================================================================
+
+If
+Please enter the name of your idea:
+>Test
+How many attributes does your idea have?
+>5
+Has the teacher approved of your project idea? [yes or no]
+>yes
+Does your idea contain objects? [yes or no]
+>yes
+Is your idea cool? [yes or no]
+>yes
+Is your idea unique? [yes or no]
+>yes
+Do you have another idea? [yes or no]
+>yes
+How many attributes does your idea have?
+>5
+Has the teacher approved of your project idea? [yes or no]
+>yes
+Does your idea contain objects? [yes or no]
+>yes
+Is your idea cool? [yes or no]
+>yes
+Is your idea unique? [yes or no]
+>yes
+Bad ideas: []
+Good ideas : [Test]
+
+ */

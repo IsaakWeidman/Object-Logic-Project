@@ -3,7 +3,7 @@ package Sample;
 public class Idea {
 
 	private String name;
-	 
+
     private int numAttributes;
     private boolean teacherApproved;
     private boolean containsObjects;
@@ -18,7 +18,7 @@ public class Idea {
         isCool = is;
         isUnique = iu;
     }
-    
+
     public Idea(String n) {
     	name = n;
     	numAttributes = 0;
@@ -28,7 +28,7 @@ public class Idea {
     	isUnique = false;
 	}
 
-	
+
 	//Set methods
     public void setAttributes (int a)
     {
@@ -52,7 +52,7 @@ public class Idea {
 	public void setName (String n) {
     	name = n;
 	}
-	
+
 
 	//Get methods
     public int getAttributes ()
@@ -74,14 +74,14 @@ public class Idea {
 	public String getName() {
     	return name;
 	}
-	
-	
+
+
 	public String toString() {
     	String str = getName();
-    	
+
     	return str;
 	}
-	
+
 
     public boolean isIdeaWorthy () {
 
